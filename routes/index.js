@@ -20,7 +20,9 @@ router.get('/projects', function(req,res, next) {
 router.get('/contactus', function(req,res, next) {
 	res.render('contactus', {title: 'contact'});
 });
-
+router.get('/services', function(req,res, next) {
+	res.render('services', {title: 'services'});
+});
 /* GET Route for displaying the Login page */
 router.get('/login', indexController.displayLoginPage);
 
