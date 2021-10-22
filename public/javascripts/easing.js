@@ -1,7 +1,7 @@
 /*file name : owl.caraousal.css
 Student name: Rachit Pandya
 Student id:301198260
-Date:2/10/2021*/
+Date:21/10/2021*/
 jQuery.extend( jQuery.easing,
 {
 	easeInQuad: function (x, t, b, c, d) {
