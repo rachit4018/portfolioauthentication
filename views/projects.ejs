@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css'>
+    <link rel='stylesheet' href='/stylesheets/owl.carousel.css'>
+    <link rel='stylesheet' href='/stylesheets/bootstrap.css'>
+	<link href="images/favicon.jpg" rel="shortcut icon"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ 	<meta name="keywords" content="Rachit Pandya, Web Developer, IT Engineer, PHP Developer, AI Developer, Developer Portfolio, Web Developer Portfolio, Hire me"/>
+ 	<!-- webfonts -->
+ 	<link href='//fonts.googleapis.com/css?family=Asap:400,700,400italic' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){     
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+  </head>
+  <body>
+    <!-- container -->
+			<!-- header -->
+	<%- include partials/header.ejs %>
+			
+			
+	
+	<!-- //portfolio -->
+	<!-- top-grids -->
+				<div class="blog" id="projects">
+					<div class="container">
+						<div class="service-head text-center">
+						<h4>PROJECTS</h4>
+						<h3>MY <span>PROJECTS</span></h3>
+						<span class="border one"></span>
+					</div>
+					   <div class="news-grid w3l-agile">
+						<div class="col-md-6 news-img">
+						  <a href="#" data-toggle="modal" data-target="#myModal1"> <img src="images/project1.jpeg" alt=" " class="img-responsive"></a>
+						 
+						</div>
+						<div class="col-md-6 news-text">
+						   <h3> <a href="#">PRODUCT RECOMMENDATION ENGINE</a></h3>
+							<!-- <ul class="news">
+								<li><i class="glyphicon glyphicon-user"></i> <a href="#">Admin</a></li>
+								<li><i class="glyphicon glyphicon-comment"></i> <a href="#">2 Comments</a></li>
+								<li><i class="glyphicon glyphicon-heart"></i> <a href="#">50 Likes</a></li>
+								<li><i class="glyphicon glyphicon-tags"></i> <a href="#">3 Tags</a></li>
+							</ul> -->
+							<p>The Product Recommendation Engine suggests products to the customers based on their preference and similarity with the product they are currently viewing. This can be done on 2 fronts: 1) Text based product similarity and 2) Image based product similarity. The engine uses the algorithms like Bag-Of-Words, Term Frequency-Inverse Document Frequency (TF-IDF).</p>
+							<a href="#" class="read hvr-shutter-in-horizontal">Visit Github</a>
+					
+						</div>
+		
+						<div class="clearfix"></div>
+					 </div>
+					  <div class="news-grid">
+
+						<div class="col-md-6 news-text two">
+						   <h3> <a href="#" >FOODWALL</a></h3>
+							<!-- <ul class="news">
+								<li><i class="glyphicon glyphicon-user"></i> <a href="#">Admin</a></li>
+								<li><i class="glyphicon glyphicon-comment"></i> <a href="#">2 Comments</a></li>
+								<li><i class="glyphicon glyphicon-heart"></i> <a href="#">50 Likes</a></li>
+								<li><i class="glyphicon glyphicon-tags"></i> <a href="#">3 Tags</a></li>
+							</ul> -->
+							<p>FoodWall is online food recommendation and selling portal developed using PHP. It provides food recommendation according various parameters like comments, reviews, and taste. The portal has admin panel which is used to monitor and manage the activity. Restaurant registration, post updating, handling user and comments are the features of the portal.</p>
+								<a href="#"  class="read hvr-shutter-in-horizontal">Visit Github</a>
+					
+						</div>
+						<div class="col-md-6 news-img two">
+						   <a href="#" data-toggle="modal" data-target="#myModal1"> <img src="images/project2.jpeg" alt=" " class="img-responsive"></a>
+						 
+						</div>
+						<div class="clearfix"></div>
+					 </div>
+					  <div class="news-grid">
+						<div class="col-md-6 news-img">
+						  <a href="#" data-toggle="modal" data-target="#myModal1"> <img src="images/project3.jpg" alt=" " class="img-responsive"></a>
+						 
+						</div>
+						<div class="col-md-6 news-text">
+						   <h3> <a href="https://github.com/rachit4018/Virtual-Assistant" data-toggle="modal" data-target="#myModal1">Desktop Vitual Assistant</a></h3>
+							<!-- <ul class="news">
+								<li><i class="glyphicon glyphicon-user"></i> <a href="#">Admin</a></li>
+								<li><i class="glyphicon glyphicon-comment"></i> <a href="#">2 Comments</a></li>
+								<li><i class="glyphicon glyphicon-heart"></i> <a href="#">50 Likes</a></li>
+								<li><i class="glyphicon glyphicon-tags"></i> <a href="#">3 Tags</a></li>
+							</ul> -->
+							<p>I had created a virtual assistant using python which operates on voice command. It performs some basic tasks as it receive voice command like sending mail, playing music, open file and folders, telling date and time, reminders etc. I used python text to speech (pyttsx) module to develop the project.</p>
+							<a href="https://github.com/rachit4018/Virtual-Assistant" class="read hvr-shutter-in-horizontal" target="_blank">Visit Github</a>
+					
+						</div>
+		
+						<div class="clearfix"></div>
+					 </div>
+					</div>
+				</div>
+				<!-- top-grids -->
+	
+
+<!-- why hire me -->
+
+
+			<!-- /footer -->
+<%- include partials/footer.ejs %>
+
+<a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!--start-smooth-scrolling-->
+						<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+											containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+										};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+								<!--end-smooth-scrolling-->
+<!-- //for bootstrap working -->
+	<script src="/javascripts/bootstrap.js"></script>
+	
+  </body>
+</html>

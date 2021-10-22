@@ -1,0 +1,77 @@
+<%- include ../partials/header.ejs %>
+
+<!-- Content for the Add page -->
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h1><%= title %></h1>
+
+            <form class="form" method="POST">
+                <div class="form-group">
+                    <label for="nameTextField">Firstname</label>
+                    <input type="text" class="form-control"
+                    id="firstnameTextField"
+                    placeholder="Enter the Firstname"
+                    name="firstname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="authorTextField">Lastname</label>
+                    <input type="text" class="form-control"
+                    id="lastnameTextField"
+                    placeholder="Enter the Lastname"
+                    name="lastname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="publishedTextField">Email</label>
+                    <input type="text" class="form-control"
+                    id="emailTextField"
+                    placeholder="Enter Email id"
+                    name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="descriptionTextArea">Contact Number</label>
+                    <input type="number" class="form-control"
+                    id="contactnumberTextField"
+                    placeholder="Enter contact number"
+                    name="contactnumber" required>
+                </div>
+
+                <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-edit"></i> Submit</button>
+                
+                    <a href="/business-list" class="btn btn-warning">
+                        <i class="fas fa-undo"></i> Cancel</a>
+
+            </form>
+        </div>
+
+    </div>
+</div>
+
+
+
+<%- include ../partials/footer.ejs %>
+<a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!--start-smooth-scrolling-->
+						<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+											containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+										};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+								<!--end-smooth-scrolling-->
+<!-- //for bootstrap working -->
+	<script src="/javascripts/bootstrap.js"></script>
+

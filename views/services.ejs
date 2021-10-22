@@ -1,0 +1,106 @@
+
+	<%- include partials/header.ejs %>
+			
+
+<body>
+  <div class="service-head text-center">
+            <h4>MY WORKS</h4>
+            <h3>MY <span>SERVICES</span></h3>
+            <span class="border"></span>
+          </div>
+       <!-- Topic Cards -->
+    <div id="cards_landscape_wrap-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <a href="">
+                        <div class="card-flyer">
+                            <div class="text-box">
+                                <div class="image-box">
+                                    <img src="images/services1.jpg" alt="" />
+                                </div>
+                                <div class="text-container">
+                                    <h6>AI Development</h6>
+                                    <p>Although I am still learning different concepts of AI and ML, My Artificial Development Services include building  NLP-based applications, computer vision apps, voice assistants and chatbots.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <a href="">
+                        <div class="card-flyer">
+                            <div class="text-box">
+                                <div class="image-box">
+                                    <img src="images/services2.jpg" alt="" />
+                                </div>
+                                <div class="text-container">                                    
+                                    <h6>Web Design & Development</h6>
+                                    <p>I provide the latest Web technologies and architectures to design responsive & scalable apps that transform customer experiences across multiple channels.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <a href="">
+                        <div class="card-flyer">
+                            <div class="text-box">
+                                <div class="image-box">
+                                    <img src="images/services3.png" alt="" />
+                                </div>
+
+                                <div class="text-container">
+                                    <h6>Database Development </h6>
+                                   <p>I provide Efficient Database development, Intigration and Management.I work on couple of Database Technologies like MySQL and MongoDB for wide range of purposes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <a href="">
+                        <div class="card-flyer">
+                            <div class="text-box">
+                                <div class="image-box">
+                                    <img src="images/services4.png" alt="" />
+                                </div>
+                                <div class="text-container">
+                                    <h6>Content Creation</h6>
+                                   <p>I Prepare well-structured and comprehensive drafts by using digital publishing platforms and
+                                      create and distribute marketing copy for advertising our company’s products and services.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+ <%- include partials/footer.ejs %>
+
+<a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+  <!--start-smooth-scrolling-->
+            <script type="text/javascript">
+                  $(document).ready(function() {
+                    /*
+                    var defaults = {
+                      containerID: 'toTop', // fading element id
+                      containerHoverID: 'toTopHover', // fading element hover id
+                      scrollSpeed: 1200,
+                      easingType: 'linear' 
+                    };
+                    */
+                    
+                    $().UItoTop({ easingType: 'easeOutQuart' });
+                    
+                  });
+                </script>
+                <!--end-smooth-scrolling-->
+<!-- //for bootstrap working -->
+  <script src="/javascripts/bootstrap.js"></script>
+  
+  </body>
+</html>

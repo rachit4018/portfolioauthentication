@@ -1,0 +1,59 @@
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css'>
+    <link rel='stylesheet' href='/stylesheets/owl.carousel.css'>
+    <link rel='stylesheet' href='/stylesheets/bootstrap.css'>
+    <link rel='stylesheet' href='/stylesheets/services.css'>
+	<link href="/images/favicon.jpg" rel="shortcut icon"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ 	<meta name="keywords" content="Rachit Pandya, Web Developer, IT Engineer, PHP Developer, AI Developer, Developer Portfolio, Web Developer Portfolio, Hire me"/>
+ 	<!-- webfonts -->
+ 	<link href='//fonts.googleapis.com/css?family=Asap:400,700,400italic' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){     
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+  </head>
+
+<div id="home" class="header">
+				<div class="container">
+				<!-- top-hedader -->
+				<div class="top-header">
+					<!-- /logo -->  
+					<!--top-nav---->
+					<div class="top-nav">
+					<div class="navigation">
+					<div class="logo">
+						<h1><a href="/"><span>RACHIT PANDYA</span></a></h1>
+					</div>
+					<div class="navigation-right">
+						<span class="menu"><img src="/images/menu.png" alt=" " /></span>
+						<%- include nav.ejs %>
+							<!-- script-for-menu -->
+								<script>
+								   $( "span.menu" ).click(function() {
+									 $( "ul.nav1" ).slideToggle( 300, function() {
+									 // Animation complete.
+									  });
+									 });
+								</script>
+							<!-- /script-for-menu -->
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<!-- /top-hedader -->
+				</div>
+			</div>
+		</div>
+	</div>
